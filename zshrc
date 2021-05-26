@@ -117,4 +117,6 @@ alias gs="git status"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(rbenv init -)"
+if command -v rbenv &> /dev/null
+then eval "$(rbenv init -)"
+fi
